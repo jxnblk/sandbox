@@ -18,6 +18,7 @@
     "gatsby-plugin-emotion": "^4.0.4",
     "lodash.merge": "^4.6.1",
     "react": "^16.8.3",
-    "react-dom": "^16.8.3"
+    "react-dom": "^16.8.3",
+    "styled-system": "^4.0.1"
   }
 }
