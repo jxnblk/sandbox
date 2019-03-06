@@ -18,6 +18,8 @@ import pick from 'lodash.pick'
 import Docs from './system-typography-docs.mdx'
 
 const typography = compose(
+  // pass non-styled-system styles directly to emotion
+  props => props,
   fontFamily,
   fontSize,
   lineHeight,
