@@ -1,0 +1,39 @@
+
+# Type System
+
+Simple abstraction for creating base typographic styles
+
+## Input
+- scale
+  - OR ratio for generative scales
+- fontFamily
+- fontWeight
+- fontSize (p)
+- lineHeight
+- margin (based on space scale)
+
+## Output
+- fontSizes
+- space scale
+- styles (all markdown elements)
+  - h1-h6
+  - p, ol, ul, li
+  - code, samp, pre, kbd
+  - blockquote
+  - hr, img,
+
+## Implementations
+- TypeSystemProvider
+- Emotion global styles
+- Raw CSS
+
+---
+
+element | fontSize  | lineHeight  | height
+--------|-----------|-------------|-------
+h1      | 32        | 1.25        | 40
+h2      | 24        | 1.333       | 32
+h3      | 20        | 1.2         | 24
+h4      | 16        | 1.5         | 24
+h5      | 14        | 1.5         | 21
+h6      | 12        | 1.5         | 18

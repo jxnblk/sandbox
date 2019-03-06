@@ -1,0 +1,29 @@
+
+Picks up values from a styled-system theme and creates scoped typographic styles, which can be used to wrap content like MDX or markdown.
+
+## Usage
+
+```jsx
+import React from 'react'
+import Typography from '@styled-system/typography'
+import Doc from './doc.mdx'
+
+export default props =>
+  <Typography>
+    <Doc />
+  </Typography>
+```
+
+## Config
+
+```js
+<Typography
+  h1={{
+    fontSize: [ 5, 6 ],
+    my: 3,
+  }}
+  h2={{
+    fontSize: [ 4, 5 ],
+  }}
+/>
+```

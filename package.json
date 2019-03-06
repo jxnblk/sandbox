@@ -16,7 +16,11 @@
     "gatsby": "^2.1.22",
     "gatsby-mdx": "^0.4.2",
     "gatsby-plugin-emotion": "^4.0.4",
+    "lodash.flatten": "^4.4.0",
+    "lodash.flattendeep": "^4.4.0",
     "lodash.merge": "^4.6.1",
+    "lodash.omit": "^4.5.0",
+    "lodash.pick": "^4.4.0",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "styled-system": "^4.0.1"
