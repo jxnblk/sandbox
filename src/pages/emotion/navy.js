@@ -4,11 +4,15 @@ import { ThemeProvider } from 'emotion-theming'
 import { BlocksProvider } from 'mdx-blocks'
 import Box from './box'
 
+const theme = (args) => {
+  console.log(args)
+  return {
+    color: 'navy'
+  }
+}
+
 export default props =>
-  <ThemeProvider
-    theme={{
-      color: 'navy',
-    }}>
+  <ThemeProvider theme={theme}>
     <Box>
       Navy
     </Box>

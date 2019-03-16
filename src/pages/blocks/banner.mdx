@@ -1,13 +1,28 @@
-import { banner } from 'mdx-blocks'
+import { Banner, banner } from 'mdx-blocks'
+import { ThemeContext } from '@emotion/core'
+import { Link } from 'gatsby'
 
-export default banner({
-  color: 'white',
-  bg: 'primary'
-})
+export default props => {
+  console.log(ThemeContext)
+  return React.createElement(ThemeContext.Consumer, {
+    children: context => {
+      console.log(context)
+      return React.createElement(Banner, ({
+        ...props,
+        color: 'white',
+        bg: 'primary',
+        components: {
+          a: ({ href, ...props }) => <Link {...props} to={href} />
+        }
+      }))
+    }
+  })
+}
 
 # Blocks
 
 This is a demo of mdx-blocks and a test to check if Emotion context is leaky across routes.
 
-[Funk Theme](/blocks)
-[Base Theme](/blocks/two)
+- [Funk Theme](/blocks)
+- [Base Theme](/blocks/two)
+- [Future Theme](/blocks/three)
